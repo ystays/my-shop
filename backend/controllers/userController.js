@@ -105,7 +105,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 
     const updatedUser = await user.save();
 
-    res.json({
+    res.status(200).json({
       _id: updatedUser._id,
       name: updatedUser.name,
       email: updatedUser.email,
@@ -157,6 +157,7 @@ const getUserById = asyncHandler(async (req, res) => {
     throw new Error('User not found');
   }
 });
+
 // @desc    Update user
 // @route   PUT /api/users/:id
 // @access  Private/Admin
@@ -181,6 +182,7 @@ const updateUser = asyncHandler(async (req, res) => {
     throw new Error('User not found');
   }
 });
+
 
 export {
   authUser,
