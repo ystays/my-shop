@@ -5,7 +5,7 @@ import { Navbar, Nav, Container, Badge, NavDropdown } from 'react-bootstrap';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
